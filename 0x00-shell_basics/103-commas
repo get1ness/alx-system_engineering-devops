@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Ap | sed -E 's|/$|/,|;s|^(\.(\.)?[^/]*).*$|\1,|' | LC_ALL=C sort -d -t/ -k2 | tr -d '\n' && ech
+ls -1Ap | sed -E 's|/$|/,|;s|^(\.(\.)?[^/]*).*$|\1,|' | LC_ALL=C sort -d -t/ -k2 | tr -d '\n' & echo
