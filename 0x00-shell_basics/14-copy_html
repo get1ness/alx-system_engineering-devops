@@ -1,2 +1,2 @@
 #!/bin/bash
-parent_dir=$(dirname "$(pwd)"); find . -maxdepth 1 -name "*.html" -newer "$parent_dir" | xargs -I {} rsync -u {} "$parent_dir"
+parent_dir=$(dirname "$(pwd)") find . -maxdepth 1 -name "*.html" -newer "$parent_dir" | xargs -I {} rsync -u {} "$parent_dir"
